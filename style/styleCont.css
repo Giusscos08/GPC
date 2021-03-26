@@ -76,21 +76,19 @@ main{
     position: absolute;
     top: 10px;
     right: 30px;
-    padding: 0px 5px 10px 5px;
     font-size: 30px;
+    font-weight: 700;
+    padding: 5px 10px 5px 10px;
     border: 2px solid #ffffff;
     border-radius: 5px;
 }
 .btnMenu:hover{
-    content: '>>';
     background-color: #ffffff;
     color: #000000;
     transition: 1s;
 }
-.btnMenu:active{
-    background-color: #ffffff;
-    color: #000000;
-    transition: 1s;
+.btnMenu::before{
+    content: "+";
 }
 .sideLink{  
     width: 100%;
