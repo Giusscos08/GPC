@@ -16,8 +16,21 @@
     <main>
         <div class="navSide">
             <a class="sideLink" href="/index.html">Home</a>
-            <a class="sideLink" href="infoMain.html">Intro / Informatica</a>
-            <a class="sideLink" href="sicurezza-informatica.html">Sicurezza Informatica</a>
+            <a class="sideLink" href="/articoli.html">Home | Articoli</a>
+            <p class="sprt">Informatica</p>
+            <a class="sideLink" href="/informatica/sicurezza-informatica.html">Sicurezza Informatica</a>
+            <p class="sprt">Recensioni</p>
+            <a class="sideLink" href="/recensioni/ryzen-cpu.html">CPU Ryzen</a>
+            <a class="sideLink" href="/recensioni/dissipatori.html">Dissipatori</a>
+            <a class="sideLink" href="/recensioni/acquistare-laptop.html">Quale laptop acquistare?</a>
+            <p class="sprt">Esperienze</p>
+            <a class="sideLink" href="/esperienze/in-cucina.html">In Cucina</a>
+            <a class="sideLink" href="/esperienze/modellazione-3d.html">Modellazione 3d</a> 
+            <a class="sideLink" href="/esperienze/allenamento.html">Allenamento</a>
+            <a class="sideLink" href="/esperienze/vendere-acquistare-online.html">Vendere e Acquistare online</a>
+            <p class="sprt">Svago</p>
+            <a class="sideLink" href="/svago/libri.html">Libri</a>
+            <a class="sideLink" href="/svago/musica.html">Musica</a>
         </div>
         <div class="container">
             <div class="title">
@@ -33,8 +46,8 @@
                 <p> 
                     I file Json vengono utilizzati per lo scambio di dati di qualsiasi tipo. Sono file contententi dei tag e ad ognuno di questi viene
                     associato un dato o una serie di dati. Un esempio potrebbe essere: {"nome": 'Giuseppe'; "cognome": 'Cosenza'}  e cosi' via. Da qui i dati
-                    sono facilmente estraibili e soprattutto ordinati. Il campo di utilizzo e' molto vasto, per esempio pensate ai dati di questa attuale 
-                    pandemia. Un altro esempio e' il salvataggio di dati di gioco, quindi parliamo del vostro punteggio, del livello del vostro personaggio e cosi' via. 
+                    sono facilmente estraibili e soprattutto ordinabili. Il campo di utilizzo e' molto vasto, per esempio pensate ai dati di questa attuale 
+                    pandemia. Un altro esempio e' il salvataggio di dati di gioco, o di sessione quindi parliamo del tuo punteggio, del livello del tuo personaggio e cosi' via. 
                     Viene quindi "compilato" un unico file Json con tutti i tag e i dati per poi essere caricato sulla rete ed essere utilizzato a vostro piacimento. Ovviamente
                     potete creare anche il vostro file senza caricarlo in rete.
                 </p>
@@ -42,31 +55,34 @@
                     Come manipolare un file Json?
                 </h2>
                 <p>
-                    Facilissimo, per prima cosa dovete sapere dove si trova il file Json che vi interessa. Quindi se state lavorando con file in locale, ovvero sul vostro
-                    pc, dovrete specificare la posizione del file in questione. Se state lavorando con file online e quindi caricati sulla rete, il piu' delle 
+                    Facilissimo, per prima cosa devi sapere dove si trova il file Json che ti interessa. Quindi se stai lavorando con file in locale, ovvero sul tuo
+                    pc, dovrai specificare la posizione del file in questione. Se stai lavorando con file online e quindi caricati sulla rete, il piu' delle 
                     volte e' possibile prelevare dal sito stesso il collegamento del file. In breve il sito vi fornira' un link da incorporare nel vostro codice e che 
                     permettera' il collegamento col vostro file (e' possibile anche scaricare il file in questione e quindi utilizzarlo come file locale). Bene, ho dato 
-                    per scontato che se state leggendo questo "articolo" e' perche' avete delle basi di programmazione o conoscete almeno un minimo di cosa stiamo parlando.
-                    Per quanto riguarda il linguaggio di programmazione, non dovrebbero esserci limitazioni su cio' che utilizzate. In questo caso io utilizzo python ma dovrebbe 
-                    essere la stessa cosa anche per gli altri linguaggi. Per prima cosa dovete importare la libreria json in questo modo >> <b>import json</b> . 
-                    Successivamente dovete caricare il file, quindi vi basta instanziare una variabile (su python non bisogna specificare il tipo e dovrebbe riconoscerla
-                    come dizionario) e assegnarli >> <b>vostra-variabile = json.load(open("nome-del-file.json"))</b> . In questo modo potete lavorare col vostro file. Un modo veloce
-                    per poterlo fare e' il seguente >> <b>vostra-variabile["tag-dati-json"]</b> . Se per esempio volete prelevare piu' dati dello stesso tag, potete inserire quel codice
-                    in un ciclo, farlo andare fino alla lunghezza del file e quindi assegnarlo ad un array o a cio' che piu' vi serve.
+                    per scontato che se stai leggendo questo "articolo" e' perche' hai delle basi di programmazione o conosci almeno un minimo di cosa stiamo parlando.
+                    Per quanto riguarda il linguaggio di programmazione, non dovrebbero esserci limitazioni su cio' che utilizzi. In questo caso io utilizzo python ma dovrebbe 
+                    essere la stessa cosa anche per gli altri linguaggi. Per prima cosa devi importare la libreria json in questo modo >> <b>import json</b> . 
+                    Successivamente devi caricare il file, quindi ti basta instanziare una variabile (su python non bisogna specificare il tipo e dovrebbe riconoscerla
+                    come dizionario) e assegnarli >> <b>vostra-variabile = json.load(open("nome-del-file.json"))</b>. In questo modo puoi lavorare col tuo file. Un modo veloce
+                    per poterlo fare e' il seguente >> <b>vostra-variabile["tag-dati-json"]</b> . Se per esempio vuoi prelevare piu' dati dello stesso tag, puoi inserire quel codice
+                    in un ciclo, farlo andare fino alla lunghezza del file e quindi assegnarlo ad un array o a cio' che piu' ti serve.
                 </p>
                 <h2>
                     Il mio Progetto
                 </h2>
                 <p>
-                    <b>Potete trovare questo progetto sul mio canale <a href="https://youtu.be/gDEWxTjGFO4">Youtube</a>.</b>
+                    <b>Puoi trovare questo progetto sul mio canale <a href="https://youtu.be/gDEWxTjGFO4">Youtube</a>.</b>
                     <br>La traccia prevedeva la rappresentazione grafica di dati in formato json utilizzando il linguaggio Python. Il mio percorso iniziava quasi da zero, in quanto se si ha almeno 
                     la conoscenza di un linguaggio, si entra subito nel meccanismo. Possiamo dire che lo scheletro e' grosso modo il medesimo per quasi tutti i linguaggi. Mi sono aiutato come sempre con
-                    la documentazione di w3school che, a mio parere e' tra le piu' complete. Mi sono rimboccato le maniche e ho iniziato a lavorare. Inizialmente i miei piani erano diversi dal risultato finale.
+                    la documentazione di w3school che, a mio parere e' tra le piu' complete e semplici da seguire. Mi sono rimboccato le maniche e ho iniziato a lavorare. Inizialmente i miei piani erano diversi dal risultato finale.
                     Volevo fare un qualcosa in piu' di un semplice grafico. Volevo simulare la diffusione a macchia d'olio che si vede principalmente nei film, se vedete il video su youtube capirete
                     sicuramente meglio :D . Questo pero' non si sposava bene con le risorse e con le mie capacita' (attegiamento ovviamente sbagliato per quanto mi riguarda), cosi' ho deciso di optare per un 
                     metodo di rappresentazione piu' semplice. Ho iniziato cosi' ad utilizzare le librerie <b>matplotlib</b> e <b>tkinter</b>. Ho realizzato le varie richieste della traccia creando una finestra
-                    con dei bottoni e delle caselle di input (testo) per poter scegliere quali dati visualizzare. Per esempio si possono vedere i grafici dei positivi in Calabria o in qualsiasi altra regioone presente 
+                    con dei bottoni e delle caselle di input (testo) per poter scegliere quali dati voler visualizzare. Per esempio si possono vedere i grafici dei positivi in Calabria o in qualsiasi altra regioone presente 
                     nel file Json oppure prendere i dati riguardanti tutta l'Italia. 
+                    <br><br><br>
+                    Con questo era tutto! Spero di non averti annoiato e di averti incuriosito o spronato ad iniziare a programmare. Ti aspetto per altri progetti e ti ringrazio per essere arrivato fino a 
+                    qui! Ci si becca in un altro articolo!
                 </p>
             </div>
         </div>    

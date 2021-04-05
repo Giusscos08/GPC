@@ -97,6 +97,7 @@ header{
 .indexList{
     color: #ffffff;
     text-transform: uppercase;
+    height: 30px;
 }
 .indexList:hover{
     color: #ff0000;

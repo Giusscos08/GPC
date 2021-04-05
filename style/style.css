@@ -109,58 +109,34 @@ header p{
 }
 /*Corpo*/
 main{
-    color: #000000;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 350px;
 }
 main a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000;
-    font-size: 23px;
-    font-weight: 500;
-    margin-top: 200px;
+    flex-basis: 50%;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 40px;
+    font-size: 30px;
 }
+
 main a:hover{
-    text-decoration: underline;
-}
-.content h1{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-}
-.contentSet{
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.contentSet a{
-    font-size: 23px;
-    font-weight: 500;
+    background-color: #ffffff;
     color: #000000;
-    margin: 15px;
+    transition: 0.3s;
 }
-.contentSet a:hover{
-    text-decoration: underline;
-}
+
 /*Responsive*/
 @media only screen and (max-width: 530px){
     main a{
-        margin-top: 100px;
-    }
-    .content h1{
-        font-size: 25px;
-    }
-    .contentSet{
-        margin-top: 50px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex: 100%;
     }
 }
 /*Coda*/
