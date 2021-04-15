@@ -28,18 +28,40 @@
             Home - Giuseppe Pio Cosenza 
         </h1>
         <p>
-            Benvenuto sulla mia pagina Web! Questa e' la Home e da qui puoi dare un occhiata ai miei Articoli o al mio Portfolio Digitale! 
+            Benvenuto sulla mia pagina Web! Questa e' la Home e da qui puoi dare un occhiata ai miei Articoli o al mio Portfolio Digitale! Inoltre potrai chiedermi qualsiasi cosa attraverso il form in basso!
             <br>Grazie per il tempo che mi stai dedicando!
         </p>
     </header>
     <main>
-        <a href="portfolio.html" title="Visita il mio Portfolio Digitale!">PortFolio / CV</a>
-        <a href="articoli.html" title="Dai un occhiata ai miei Articoli! (Nulla di che ovviamente)">Articoli</a>
+        <div class="cnt">
+            <a href="portfolio.html" title="Visita il mio Portfolio Digitale!">PortFolio / CV</a>
+            <a href="articoli.html" title="Dai un occhiata ai miei Articoli! (Nulla di che ovviamente)">Articoli</a>
+        </div>
+        <p>
+            Chiedimi qualsiasi cosa!
+        </p>
+        <form name="cntct" id="frm" netlify>
+            <div class="inp">
+                <label for="nm">Nome Completo</label><br> 
+                <input type="text" id="nm" name="nm" placeholder="Giuseppe Pio Cosenza" title="Inserisci il tuo nome!" required><br>    
+            </div>
+            <div class="inp">
+                <label for="eml">Email</label><br>
+                <input type="email" id="eml" name="eml" placeholder="giu.cosenza08@gmail.com" title="Inserisci la tua email!" required><br>    
+            </div>
+            <div class="inp">
+                <label for="msg">Messaggio</label><br>
+                <textarea  id="msg" name="msg" maxlength="500" placeholder="Ciao! Come va? Tutto bene? Mi fa piacere!" title="Scrivimi un messaggio! Gratuito e privato!" required></textarea><br>
+            </div>
+            <div class="inp">
+                <input type="submit" id="sbm" value="invia">
+            </div>
+        </form>
     </main>
     <footer class="ending">
         <div class="myInfo">
             <p>
-                E-mail: giu.cosenza08@protonmail.com
+                E-mail: giu.cosenza08@gmail.com
                 <br>Cellulare: +39-3248088907
             </p>
             <div class="socialFooter">

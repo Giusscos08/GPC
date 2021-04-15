@@ -38,6 +38,7 @@
     color: #ff0000;
 }
 *, html{
+    scroll-behavior: smooth;
     background: #181818;
     list-style: none;
     text-decoration: none;
@@ -85,9 +86,9 @@ main{
     right: 30px;
     font-size: 30px;
     font-weight: 700;
-    padding: 5px 10px 5px 10px;
+    padding: 0px 10px 5px 10px;
     border: 2px solid #ffffff;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 .btnMenu:hover{
     background-color: #ffffff;

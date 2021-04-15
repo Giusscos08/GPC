@@ -100,6 +100,9 @@ header p{
     }
 }
 @media only screen and (max-width: 300px){
+    header{
+        padding-left: 50px;
+    }
     header h1{
         font-size: 30px;
     }
@@ -114,29 +117,105 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 350px;
+    height: fit-content;
 }
-main a{
+.cnt{
+    flex-basis: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 50%;
-    color: #ffffff;
-    background-color: #000000;
-    border-radius: 40px;
+}
+.cnt a{
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px;
+    color: #000000;
     font-size: 30px;
 }
-
-main a:hover{
-    background-color: #ffffff;
-    color: #000000;
-    transition: 0.3s;
+.cnt a:hover{
+    text-decoration: none;
 }
-
+main p{
+    margin-top: 50px;
+    text-align: center;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+form{
+    margin-top: 50px;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inp{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    text-align: center;
+    font-size: 25px;
+}
+input{
+    padding: 30px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #000000;
+    color: #ff6600;
+    border-radius: 25px;
+}
+#msg::-webkit-scrollbar{
+    background-color: #000000;
+    width: 5px;
+}
+#msg::-webkit-scrollbar-thumb{
+    background-color: #ff6600;
+    border-radius: 100px;
+}
+#msg{
+    height: 300px;
+    padding: 30px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #000000;
+    color: #ff6600;
+    border-radius: 10px;
+}
+#sbm{
+    cursor: pointer;
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#sbm:hover{
+    color: #000000;
+    background-color: #ff6600;
+    transition: 0.4s;
+}
 /*Responsive*/
 @media only screen and (max-width: 530px){
-    main a{
-        flex: 100%;
+    .cnt{
+        flex-direction: column;
+    }
+    .cnt a{
+        margin: 20px 0px 20px 0px;
+    }
+}
+@media only screen and (max-width: 330px){
+    input{
+        font-size: 14px;
+        padding: 10px;
+    }
+    #sbm{
+        width: 100px;
     }
 }
 /*Coda*/
