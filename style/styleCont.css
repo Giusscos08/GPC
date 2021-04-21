@@ -126,11 +126,24 @@ main{
     font-size: 80px;
     font-weight: 400;
 }
+.ads{
+    height: fit-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*
+ins{
+    overflow-y: hidden;
+}
+*/
 .content{
     font-size: 20px;
     text-align: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 20px;
 }
 .ctnAmz iframe{
     float: left;
@@ -215,109 +228,5 @@ main{
     .content iframe{
         float: none;
         margin-right: 0px;
-    }
-}
-/*ads*/
-#mag{
-    margin-bottom: 100px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#min{
-    display: none;
-}
-#mic{
-    display: none;
-}
-/*ads Responsive*/
-@media only screen and (max-width: 920px){
-    #mag{
-        display: none;
-    }
-    #min{
-        display: unset;
-        margin-bottom: 100px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-@media only screen and (max-width: 300px){
-    #min{
-        display: none;
-    }
-    #mic{
-        display: unset;
-        margin-bottom: 100px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-/*Coda*/
-#Y{
-    color: #ff0000;
-}
-#T{
-    color: #a200ff;
-}
-#R{
-    color: #ff6600;
-}
-#I{
-    animation: instaColor infinite 5s;
-}
-.ending{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 40px;
-    height: fit-content;
-    color: #ffffff;
-}
-.myInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.myInfo p{
-    padding-top: 50px;
-    font-weight: 500;
-}
-.socialFooter{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-.socialFooter a{
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 5px;
-    text-align: right;
-}
-/*Responsive*/
-@media only screen and (max-width: 535px){
-    .myInfo{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .myInfo p{
-        text-align: center;
-    }
-    .socialFooter a{
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 250px){
-    .myInfo p{
-        font-size: 12px;
-    }
-    .socialFooter{
-        margin-top: 30px;
-    }
-    .socialFooter a{
-        font-size: 12px;
     }
 }

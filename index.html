@@ -10,7 +10,7 @@
     <meta name="description" content="Questa e' la pagina principale del mio sito! Qui potete accedere ad una serie di contenuti da me creati, come: Il mio PortFolio / CV Digitale;
                                     una sezione dedicata alle mie Esperienze personali; Una sezione dedicata a consigli in campo Informatico, Tutorial e tanto altro; Una sezione dedicata
                                     alle recensioni di prodotti principalmente acquistati su Amazon, in modo da contrastare le recensioni false e che ci possono in qualche modo ingannare.">
-    <meta name="keywords" content="Giuseppe Pio Cosenza, Giuseppe Cosenza, Home, Pagina principale, CV, Curriculum, Portfolio, Informatica, Tutorial, Recensioni">
+    <meta name="keywords" content="Giuseppe Pio Cosenza, Giuseppe Cosenza, Home, Pagina principale, CV, Curriculum, Portfolio, Informatica, Recensioni">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="/style/style.css">
     <title>
@@ -18,60 +18,118 @@
     </title>
 </head>
 <body>
-    <div class="loading">
-        <h1 class="textLoad" id="introJS"> 
-            Apertura in corso!
-        </h1>
-    </div>
     <header>
         <h1>
-            Home - Giuseppe Pio Cosenza 
+            Home
         </h1>
         <p>
-            Benvenuto sulla mia pagina Web! Questa e' la Home e da qui puoi dare un occhiata ai miei Articoli o al mio Portfolio Digitale! Inoltre potrai chiedermi qualsiasi cosa attraverso il form in basso!
+            Benvenuto sulla mia pagina Web! Questa e' la Home e da qui puoi dare un occhiata ai miei Articoli, al mio Portfolio Digitale o ai miei Lavori! 
+            Inoltre potrai chiedermi qualsiasi cosa attraverso il form nella sezione <b>Contatti</b>!
             <br>Grazie per il tempo che mi stai dedicando!
         </p>
     </header>
+    <div class="nav">
+        <a href="#prtfl" title="Il mio portfolio">portfolio</a>
+        <a href="#wrk" title="I miei lavori">lavori</a>
+        <a href="#rtc" title="I miei articoli">articoli</a>
+        <a href="#cntct" title="Contattami">contatti</a>
+    </div>
     <main>
-        <div class="cnt">
-            <a href="portfolio.html" title="Visita il mio Portfolio Digitale!">PortFolio / CV</a>
-            <a href="articoli.html" title="Dai un occhiata ai miei Articoli! (Nulla di che ovviamente)">Articoli</a>
+        <div id="prtfl">
+            <div class="hg">
+                <h2 class="ttl">
+                    Giuseppe Pio Cosenza
+                </h2>
+                <p class="dsc">
+                    <img class="imprf" src="/img/bg-def.jpeg" alt="foto-profilo-giuseppe-pio-cosenza">
+                    Ciao e benvenuto! Mi chiamo Giuseppe e sono un giovane studente dell'Unical (Universita' della Calabria). Ho scelto come corso di studi Ingegneria Informatica, in quanto mi appassiona e 
+                    affascina in ogni suo campo, specialmente il lato sicurezza: CyberSecurity! Negli anni precedenti, alle superiori, sono stato studente presso un Istituto Tecnino Industriale, sempre 
+                    a indirizzo Informatico. Mi trovai bene, e li' iniziai ad entrare in campi come: Programmazione, Montaggio Video, Ritocco Fotografico, Registrazione, Sviluppo di
+                    pagine web (rigorosamente in locale) e modelli o oggetti in 3d.
+                    Nel corso di questi anni mi sono sempre piu' appassionato all'informatica e ai suoi vari ambiti. E andando avanti ho capito che l'informatica, non necessariamente deve essere 
+                    studiata a scuola. Un esempio? Questo sito l'ho fatto interamente io e, a scuola, a quanto io possa ricordare, abbiamo fatto solo qualche tag html (il "linguaggio" utilizzato per 
+                    formare pagine web come questa) e css (altro "linguaggio" utilizzato per dare lo stile alla pagina web). Mi piace sperimentare cose nuove ed entrare in piu' 
+                    ambiti, per sapere e conoscere cose nuove. Un esempio e' la modellazione 3d, con il quale ho creato alcuni oggetti che vedrai sicuramente nellwe altre pagine.
+                    Cerco inoltre di riciclare il piu' possibile riutilizzando se possibile qualunque oggetto che altrimenti andrebbe buttato. Mi piace anche montare video
+                    e giocare ai VideoGames.
+                    <br>Se dovessi riassumere in breve le competenze acquisite in questi anni, direi che: 
+                    <br>Ho un ottima conoscenza sulla costruzione di pagine Web, utilizzando HTML5, CSS3 e JavaScript;
+                    <br>Ho buone conoscenze sul montaggio Foto (Gimp)/ Video (DaVinci Resolve);
+                    <br>Ho sufficienti conoscenze di: C++, Java, PHP, MySql;
+                </p>
+            </div>
         </div>
-        <p>
-            Chiedimi qualsiasi cosa!
-        </p>
-        <form name="cntct" id="frm" netlify>
-            <div class="inp">
-                <label for="nm">Nome Completo</label><br> 
-                <input type="text" id="nm" name="nm" placeholder="Giuseppe Pio Cosenza" title="Inserisci il tuo nome!" required><br>    
+        <div id="wrk">
+            <div class="hg">
+                <div class="cnt-icn">
+                    <a href="https://pcasa-detersivi.it" target="_blank"><img class="icn" src="/img/pcasa.png" alt="icona-pcasa-detersivi"></a>
+                </div>
             </div>
-            <div class="inp">
-                <label for="eml">Email</label><br>
-                <input type="email" id="eml" name="eml" placeholder="giu.cosenza08@gmail.com" title="Inserisci la tua email!"><br>    
+        </div>
+        <div id="rtc">
+            <div class="hg">
+                <div class="nvsd">
+                    <p>Informatica</p>
+                    <a href="/informatica/sicurezza-informatica.html">Sicurezza Informatica</a>
+                    <a href="/informatica/manipolazione-file-json.html">Manipolazione File Json con Python</a>
+                </div>
+                <div class="nvsd">
+                    <p>Recensioni</p>
+                    <a href="/recensioni/ryzen-cpu.html">CPU Ryzen</a>
+                    <a href="/recensioni/dissipatori.html">Dissipatori</a>
+                    <a href="/recensioni/acquistare-laptop.html">Quale laptop acquistare?</a>
+                </div>
+                <div class="nvsd">
+                    <p>Esperienze</p>
+                    <a href="/esperienze/in-cucina.html">In Cucina</a>
+                    <a href="/esperienze/modellazione-3d.html">Modellazione 3d</a> 
+                    <a href="/esperienze/allenamento.html">Allenamento</a>
+                    <a href="/esperienze/vendere-acquistare-online.html">Vendere e Acquistare online</a>
+                    <a href="/esperienze/disturbi-alimentari.html">Disturbi Alimentari</a>
+                </div>
+                <div class="nvsd">
+                    <p>Svago</p>
+                    <a href="/svago/libri.html">Libri</a>
+                    <a href="/svago/musica.html">Musica</a>
+                </div>
             </div>
-            <div class="inp">
-                <label for="msg">Messaggio</label><br>
-                <textarea  id="msg" name="msg" maxlength="500" placeholder="Ciao! Come va? Tutto bene? Mi fa piacere!" title="Scrivimi un messaggio! Gratuito e privato!" required></textarea><br>
+        </div>
+        <div id="cntct">
+            <div class="hg">
+                <h2 class="ttl">
+                    Se vuoi chiedermi qualcosa, ecco un form per poter inviare un messaggio!
+                </h2>
+                <form name="cntct1" id="frm" netlify>
+                    <div class="inp">
+                        <label for="nm">Nome Completo</label><br> 
+                        <input type="text" id="nm" name="nm" placeholder="Ex: Giuseppe Pio Cosenza" title="Inserisci il tuo nome!" required><br>    
+                    </div>
+                    <div class="inp">
+                        <label for="eml">Email</label><br>
+                        <input type="email" id="eml" name="eml" placeholder="Ex: giu.cosenza08@gmail.com" title="Inserisci la tua email!"><br>    
+                    </div>
+                    <div class="inp">
+                        <label for="msg">Messaggio</label><br>
+                        <textarea  id="msg" name="msg" maxlength="500" placeholder="Ex: Ciao! Come va? Tutto bene? Mi fa piacere!" title="Scrivimi un messaggio! Gratuito e privato!" required></textarea><br>
+                    </div>
+                    <div class="inp">
+                        <input type="submit" id="sbm" value="invia">
+                    </div>
+                </form>
+                <div class="myInfo">
+                    <p>
+                        E-mail: giu.cosenza08@gmail.com
+                        <br>Cellulare: +39-3248088907
+                    </p>
+                    <div class="socialFooter">
+                        <a href="https://www.youtube.com/channel/UC7KdNk9nOHb4AeRnsTjCB8Q" class="socialList" id="Y">Youtube</a>
+                        <a href="https://www.twitch.tv/giusscos08" class="socialList" id="T">Twitch</a>
+                        <a href="https://www.reddit.com/user/giuss_cos_08" class="socialList" id="R">Reddit</a>
+                        <a href="https://www.instagram.com/giusscos08/" class="socialList" id="I">Instagram</a>
+                    </div>
+                </div>
             </div>
-            <div class="inp">
-                <input type="submit" id="sbm" value="invia">
-            </div>
-        </form>
+        </div>
     </main>
-    <footer class="ending">
-        <div class="myInfo">
-            <p>
-                E-mail: giu.cosenza08@gmail.com
-                <br>Cellulare: +39-3248088907
-            </p>
-            <div class="socialFooter">
-                <a href="https://www.youtube.com/channel/UC7KdNk9nOHb4AeRnsTjCB8Q" class="socialList" id="Y">Youtube</a>
-                <a href="https://www.twitch.tv/giusscos08" class="socialList" id="T">Twitch</a>
-                <a href="https://www.reddit.com/user/giuss_cos_08" class="socialList" id="R">Reddit</a>
-                <a href="https://www.instagram.com/giusscos08/" class="socialList" id="I">Instagram</a>
-            </div>
-        </div>
-    </footer>
-    <script src="JS/intro.js"></script>
 </body>
 </html>
