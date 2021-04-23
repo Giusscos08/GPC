@@ -200,6 +200,7 @@ main{
 }
 .icn{
     width: 100px;
+    height: 100px;
     margin: 10px;
 }
 .icn:hover{
