@@ -172,6 +172,7 @@ main{
     margin: 10px;
     border-radius: 30px;    
     width: 200px;
+    height: max-content;
 }
 .bookImg:hover{
     width: 250px;
