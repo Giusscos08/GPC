@@ -143,6 +143,7 @@ main{
 .imprf{
     margin: 20px;
     width: 250px;
+    height: 250px;
     border-radius: 300px;
     float: left;
 }
@@ -161,6 +162,9 @@ main{
 @media only screen and  (max-width: 520px){
     .imprf{
         float: none;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .dsc{
         float: none;
@@ -173,8 +177,8 @@ main{
 }
 @media only screen and (max-width: 320px){
     .imprf{
-        margin: 0px;
         width: 180px;
+        height: 180px;
     }
     .ttl, .dsc{
         margin: 0px;

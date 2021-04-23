@@ -128,7 +128,7 @@ main{
 }
 /*ads*/
 .ins{
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .content{
     font-size: 20px;
