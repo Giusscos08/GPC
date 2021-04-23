@@ -126,20 +126,10 @@ main{
     font-size: 80px;
     font-weight: 400;
 }
-.ads{
-    height: fit-content;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/*ads*/
+.ins{
+    overflow: hidden;
 }
-/*
-ins{
-    overflow-y: hidden;
-}
-*/
 .content{
     font-size: 20px;
     text-align: left;
