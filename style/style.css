@@ -191,21 +191,33 @@ main{
     }
 }
 /* wk */
-.cnt-icn{
-    height: 40vh;
+.cnt{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.icn{
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+.cnt-icn{
+    margin-top: 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icn:hover{
-    cursor: pointer;
-    width: 170px;
+.icn{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}   
+.shdw{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    filter: blur(15px);
 }
 /* Articoli */
 .nvsd{
