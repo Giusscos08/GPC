@@ -1,0 +1,376 @@
+@keyframes instaColor{
+    0%{
+        color: #405DE6;
+    }
+    10%{
+        color: #5B51D8;
+    }
+    20%{
+        color: #833AB4;
+    }
+    30%{
+        color: #C13584;
+    }
+    40%{
+        color: #E1306C;
+    }
+    50%{
+        color: #FD1D1D;
+    }
+    60%{
+        color: #F56040;
+    }
+    70%{
+        color: #F77737;
+    }
+    80%{
+        color: #FCAF45;
+    }
+    90%{
+        color: #FFDC80;
+    }
+    100%{
+        color: #405DE6;
+    }    
+}
+::selection{
+    background-color: #000000;
+    color: #ffffff;
+}
+*, html{
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Testa*/
+header{
+    color: #000000;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 30px;
+}
+header h1{
+    font-size: 70px;
+}
+header p{
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 450;
+}
+/*Respomsive*/
+@media only screen and (max-width: 300px){
+    header{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    header p{
+        font-size: 15px;
+    }
+}
+/* Nav Bar */
+.nav{
+    margin-top: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+.nav a:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+.nav::after{
+    color: #000000;
+    background-color: #ffffff;
+}
+/* Responsive */
+@media only screen and (max-width: 500px){
+    .nav a{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 340px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav a{
+        padding: 0px;
+    }
+}
+/*Corpo*/
+main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+#prtfl{
+    min-width: 100%;
+}
+#lvr{
+    min-width: 100%;
+}
+#rtc{
+    min-width: 100%;
+}
+#cntct{
+   min-width: 100%;
+}
+/* Portfolio */
+.hg{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imprf{
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 300px;
+    float: left;
+}
+.ttl, .dsc{
+    margin: 20px;
+    font-weight: 500;
+}
+.ttl{
+    font-size: 30px;
+    text-align: center;
+}
+.dsc{
+    font-size: 22px;
+    text-align: right;
+}
+@media only screen and  (max-width: 520px){
+    .imprf{
+        float: none;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .dsc{
+        float: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 320px){
+    .imprf{
+        width: 180px;
+        height: 180px;
+    }
+    .ttl, .dsc{
+        margin: 0px;
+    }
+    .ttl{
+        font-size: 20px;
+    }
+    .dsc{
+        font-size: 18px;
+    }
+}
+/* Lavori */
+.cnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cnt-icn{
+    margin-top: 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icn{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+}
+/* Articoli */
+.nvsd{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nvsd p{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nvsd a{
+    font-weight: 500;
+    color: #F56040;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 220px){
+    .nvsd a{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+/* Contatti */
+form{
+    margin-top: 50px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inp{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    text-align: center;
+    font-size: 25px;
+}
+input{
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #000000;
+    color: #ff6600;
+    border-radius: 15px;
+}
+#msg::-webkit-scrollbar{
+    background-color: #000000;
+    width: 5px;
+}
+#msg::-webkit-scrollbar-thumb{
+    background-color: #ff6600;
+    border-radius: 100px;
+}
+#msg{
+    height: 200px;
+    padding: 30px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #000000;
+    color: #ff6600;
+    border-radius: 10px;
+}
+#sbm{
+    cursor: pointer;
+    width: 300px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#sbm:hover{
+    color: #000000;
+    background-color: #ff6600;
+    transition: 0.4s;
+}
+/*Responsive*/
+@media only screen and (max-width: 530px){
+    .cnt{
+        flex-direction: column;
+    }
+    .cnt a{
+        margin: 20px 0px 20px 0px;
+    }
+}
+@media only screen and (max-width: 330px){
+    input{
+        font-size: 14px;
+        padding: 10px;
+    }
+    #sbm{
+        width: 100px;
+    }
+}
+/*Coda*/
+.socialList{
+    text-transform: uppercase;
+}
+.socialList:hover{
+    text-decoration: underline;
+}
+#Y{
+    color: #ff0000;
+}
+#T{
+    color: #a200ff;
+}
+#R{
+    color: #ff6600;
+}
+#I{
+    animation: instaColor infinite 5s;
+}
+.myInfo{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.myInfo p{
+    font-size: 20px;
+}
+.socialFooter{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.socialFooter a{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: right;
+}
+/*Responsive*/
+@media only screen and (max-width: 500px){
+    .myInfo{
+        flex-direction: column;
+    }
+    .myInfo p{
+        text-align: center;
+    }
+    .socialFooter{
+        margin-top: 30px;
+    }
+    .socialFooter a{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 250px){
+    .myInfo p{
+        font-size: 16px;
+    }
+}
